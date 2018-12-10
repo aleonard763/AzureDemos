@@ -21,8 +21,6 @@
 					{
 						"name": "Wait1",
 						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": 3
 						}
@@ -33,10 +31,8 @@
 						"type": "Int",
 						"defaultValue": 3
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		}
 	]
 }
