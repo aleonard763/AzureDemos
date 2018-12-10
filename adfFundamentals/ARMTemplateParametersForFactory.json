@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adfFundamentals"
+		},
+		"trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter": {
+			"value": 21
 		}
 	}
 }

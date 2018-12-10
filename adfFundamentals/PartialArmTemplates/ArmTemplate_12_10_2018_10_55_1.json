@@ -6,10 +6,6 @@
 			"type": "string",
 			"metadata": "Data Factory Name",
 			"defaultValue": "adfFundamentals"
-		},
-		"trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter": {
-			"type": "string",
-			"defaultValue": 21
 		}
 	},
 	"variables": {
@@ -17,37 +13,10 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/fundamentalsPL1')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Wait1",
-						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 3
-						}
-					}
-				],
-				"parameters": {
-					"MyParameter": {
-						"type": "Int",
-						"defaultValue": 3
-					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/trEveryMinute')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Started",
 				"pipelines": [
 					{
@@ -56,7 +25,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"MyParameter": "[parameters('trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter')]"
+							"MyParameter": 21
 						}
 					}
 				],
@@ -69,10 +38,7 @@
 						"timeZone": "UTC"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/fundamentalsPL1')]"
-			]
+			}
 		}
 	]
 }
