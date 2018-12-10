@@ -1,0 +1,26 @@
+{
+	"name": "trEveryMinute",
+	"properties": {
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "fundamentalsPL1",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"MyParameter": 21
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2018-12-10T15:53:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
