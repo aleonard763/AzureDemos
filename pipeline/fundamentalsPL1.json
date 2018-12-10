@@ -6,9 +6,15 @@
 				"name": "Wait1",
 				"type": "Wait",
 				"typeProperties": {
-					"waitTimeInSeconds": 1
+					"waitTimeInSeconds": 3
 				}
 			}
-		]
+		],
+		"parameters": {
+			"MyParameter": {
+				"type": "Int",
+				"defaultValue": 3
+			}
+		}
 	}
 }
