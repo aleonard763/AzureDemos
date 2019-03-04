@@ -38,6 +38,21 @@
 				"typeProperties": {
 					"waitTimeInSeconds": 1
 				}
+			},
+			{
+				"name": "Wait4",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait3",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
 			}
 		],
 		"parameters": {
