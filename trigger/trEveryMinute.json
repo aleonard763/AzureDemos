@@ -1,7 +1,7 @@
 {
 	"name": "trEveryMinute",
 	"properties": {
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
