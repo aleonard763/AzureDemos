@@ -1,0 +1,27 @@
+{
+	"name": "trainAzureSSISIR",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 4
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "svtrain.database.windows.net",
+					"catalogAdminUserName": "adminandy",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Enterprise",
+				"licenseType": "BasePrice"
+			}
+		}
+	}
+}
