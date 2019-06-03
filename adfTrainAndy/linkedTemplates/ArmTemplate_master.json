@@ -11,6 +11,17 @@
 			"type": "int",
 			"defaultValue": 21
 		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"type": "string",
+			"defaultValue": "svtrain.database.windows.net"
+		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"type": "string",
+			"defaultValue": "adminandy"
+		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"type": "secureString"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -37,6 +48,15 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+						"value": "[parameters('trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint')]"
+					},
+					"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+						"value": "[parameters('trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName')]"
+					},
+					"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+						"value": "[parameters('trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword')]"
 					},
 					"trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter": {
 						"value": "[parameters('trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter')]"

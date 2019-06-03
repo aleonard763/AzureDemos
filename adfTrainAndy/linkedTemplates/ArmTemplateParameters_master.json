@@ -8,6 +8,15 @@
 		"trEveryMinute_properties_fundamentalsPL1_parameters_MyParameter": {
 			"value": 21
 		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "svtrain.database.windows.net"
+		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "adminandy"
+		},
+		"trainAzureSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
