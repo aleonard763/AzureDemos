@@ -1,0 +1,14 @@
+{
+	"name": "SecondPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "FirstWait",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			}
+		]
+	}
+}
