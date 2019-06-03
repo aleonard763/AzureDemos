@@ -1,0 +1,29 @@
+{
+	"name": "Stop SSIS IR",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stop IR",
+				"type": "WebActivity",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/dc4c3008-cb2e-4e9e-822f-daf82187663f/resourcegroups/rgTrain/providers/Microsoft.DataFactory/factories/adfTrainAndy/integrationruntimes/trainAzureSSISIR/stop?api-version=2018-06-01",
+					"method": "POST",
+					"body": {
+						"message": "Stop IR"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com"
+					}
+				}
+			}
+		]
+	}
+}
